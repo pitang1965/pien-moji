@@ -1,0 +1,4 @@
+export const SET_PARAMETER = 'SET_PARAMETER';
+export const SET_FACE_SIZE = 'SET_FACE_SIZE';
+export const SET_EYE_SIZE = 'SET_EYE_SIZE';
+export const SET_MOUSE_SIZE = 'SET_MOUSE_SIZE';

@@ -1,3 +1,40 @@
+/* Global Styles */
+:root {
+  --primary-color: #1b1b36;
+  --secondary-color: #8080ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +72,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+/* Home */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+/* Preview */
+.preview {
+  width: 45%;
+}
+
+/* Config */
+.config{
+  border-radius: 50px;
+  background: #8080ff;
+  box-shadow: 20px 20px 60px #6d6dd9, -20px -20px 60px #9393ff;
+  border: 1px black solid;
+  padding: 20px 30px;
+  width: 45%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: var(--light-color);
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+.navbar img {
+  margin-right: 0.5rem;
+  width: 51.2px;
+  height: 51.2px;
+  vertical-align: middle;
 }
