@@ -60,8 +60,6 @@ const CustomizedSlider = props => {
         defaultValue={props.defaultValue}
         // onChangeCommitted={onChangeHandler}
         onChange={onChangeHandler}
-        data-parameter-title={props.parameterTitle}
-        data-action-type={props.actionType}
       />
     </div>
   );
@@ -73,7 +71,7 @@ const userStyle = {
 };
 
 const labelStyle = {
-  width: '10rem'
+  width: '12rem'
 };
 
 CustomizedSlider.propTypes = {

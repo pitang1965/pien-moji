@@ -1,9 +1,5 @@
 ![ぴえん文字](https://i.imgur.com/U8isebZ.gif)
 
-現在、スライダーをしばらく動かすとエラーになってしまいます。
-原因と対策わかる方おりましたら、教えていただけると幸いです。
-[関連Tweet](https://twitter.com/pitang1965/status/1240935042668355585?s=20)
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

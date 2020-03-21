@@ -5,9 +5,8 @@ const About = () => {
     <Fragment>
       <h1>このアプリについて</h1>
       <p>ぴえん文字を作成するためのアプリです。</p>
-      <p>Version: 1.0.0</p>
       <br />
-      <p>プログラミングに疲れたらどうぞ</p>
+      <h2>我が家のメダカです</h2>
       <iframe
         title='Tomora'
         width='560'

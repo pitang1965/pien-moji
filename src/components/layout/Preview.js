@@ -24,7 +24,7 @@ const Preview = () => {
   };
 
   // 目
-  let eyeSize = uiFaceSize * configContext.eyeSize * 0.28;
+  let eyeSize = uiFaceSize * configContext.eyeSize * 0.25;
   let uiEyeToEyeDistancepercent = 40;
 
   let eyeDistanceFromOuter =
@@ -118,10 +118,10 @@ const Preview = () => {
   };
 
   // 眉毛
-  let eyeBlowTop = eyeTop * 0.5;
-  let eyeBlowWidth = eyeSize * 0.4;
-  let eyeBlowHeight = eyeSize * 0.6;
-  let eyeBlowDistanceFromOuter = eyeDistanceFromOuter * 0.9;
+  let eyeBlowTop = uiFaceSize * 0.18;
+  let eyeBlowWidth = uiFaceSize * 0.15;
+  let eyeBlowHeight = uiFaceSize * 0.15;
+  let eyeBlowDistanceFromOuter = uiFaceSize * 0.12;
 
   let eyeBrowStyleLeft = {
     position: 'absolute',
@@ -129,7 +129,7 @@ const Preview = () => {
     width: `${eyeBlowWidth}px`,
     height: `${eyeBlowHeight}px`,
     borderRadius: '50%',
-    border: '7px solid #744517',
+    border: `${eyeBlowWidth * 0.48}px solid #744517`,
     left: `${eyeBlowDistanceFromOuter}px`,
     transform: 'rotate(60deg)'
   };
@@ -140,16 +140,16 @@ const Preview = () => {
     width: `${eyeBlowWidth}px`,
     height: `${eyeBlowHeight}px`,
     borderRadius: '50%',
-    border: '7px solid #744517',
+    border: `${eyeBlowWidth * 0.48}px solid #744517`,
     right: `${eyeBlowDistanceFromOuter}px`,
     transform: 'rotate(-60deg)'
   };
 
   // 眉毛っぽくするためのトリミング
-  let eyeBlowAfterTop = eyeTop * 0.35;
-  let eyeBlowAfterWidth = eyeSize * 0.5;
-  let eyeBlowAfterHeight = eyeSize * 0.75;
-  let eyeBlowAfterDistanceFromOuter = eyeDistanceFromOuter * 0.7;
+  let eyeBlowAfterTop = uiFaceSize * 0.13;
+  let eyeBlowAfterWidth = uiFaceSize * 0.14;
+  let eyeBlowAfterHeight = uiFaceSize * 0.2;
+  let eyeBlowAfterDistanceFromOuter = eyeBlowDistanceFromOuter * 0.9;
 
   let eyeBrowAfterStyleLeft = {
     position: 'absolute',
@@ -159,7 +159,7 @@ const Preview = () => {
     borderRadius: '50%',
     left: `${eyeBlowAfterDistanceFromOuter}px`,
     background: `${uiFaceColor}`,
-    transform: 'rotate(60deg)'
+    transform: 'rotate(60deg)',
   };
 
   let eyeBrowAfterStyleRight = {
@@ -170,7 +170,7 @@ const Preview = () => {
     borderRadius: '50%',
     right: `${eyeBlowAfterDistanceFromOuter}px`,
     background: `${uiFaceColor}`,
-    transform: 'rotate(-60deg)'
+    transform: 'rotate(-60deg)',
   };
 
   // 口
@@ -192,7 +192,7 @@ const Preview = () => {
   };
 
   // ほっぺ
-  let cheekSize = uiFaceSize * 0.15;
+  let cheekSize = uiFaceSize * configContext.cheekSize * 0.15;
   let cheekBackgroundColor = '#e2a1a1';
   let cheekTop = uiFaceSize * 0.5;
   let cheekDistanceFromOuter = uiFaceSize * 0.12;
