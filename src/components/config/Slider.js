@@ -36,8 +36,8 @@ const CustomizedSlider = props => {
   const classes = useStyles();
 
   const onChangeHandler = (event, value) => {
-    const parameterTitle = event.target.parentElement.dataset.parameterTitle;
-    const actionType = event.target.parentElement.dataset.actionType;
+    const parameterTitle = props.parameterTitle;
+    const actionType = props.actionType;
 
     if (parameterTitle === undefined || actionType === undefined) {
       console.log('Error: undefined!');
