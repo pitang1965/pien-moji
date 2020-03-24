@@ -9,7 +9,7 @@ import ConfigState from './context/config/ConfigState';
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <ConfigState>
       <Router>

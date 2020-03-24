@@ -57,8 +57,7 @@ const CustomizedSlider = props => {
         min={props.min}
         max={props.max}
         step={props.step}
-        defaultValue={props.defaultValue}
-        // onChangeCommitted={onChangeHandler}
+        value={props.value}
         onChange={onChangeHandler}
       />
     </div>
