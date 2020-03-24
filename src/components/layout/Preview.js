@@ -1,17 +1,14 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import ConfigContext from '../../context/config/configContext';
 //  woeu(white of eye upper): 上の白目
 //  woel(white of eye lower): 下の白目
 
 const Preview = () => {
   const configContext = useContext(ConfigContext);
-
-  useEffect(() => {
-    configContext.setFaceSize(300);
-  }, []);
+  let uiFaceSize;
 
   // 顔
-  let uiFaceSize = configContext.faceSize;
+  uiFaceSize = configContext.faceSize;
   let uiFaceColor = '#FEE99E';
 
   let faceStyle = {
