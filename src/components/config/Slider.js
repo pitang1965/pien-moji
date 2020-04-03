@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
-import ConfigContext from '../../context/config/configContext';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,19 +31,7 @@ ValueLabelComponent.propTypes = {
 };
 
 const CustomizedSlider = props => {
-  const configContext = useContext(ConfigContext);
   const classes = useStyles();
-
-  const onChangeHandler = (event, value) => {
-    const parameterTitle = props.parameterTitle;
-    const actionType = props.actionType;
-
-    if (parameterTitle === undefined || actionType === undefined) {
-      console.log('Error: undefined!');
-    } else {
-      configContext.setParameter(parameterTitle, actionType, value);
-    }
-  }
 
   return (
     <div className={classes.root} style={userStyle}>
@@ -58,7 +45,7 @@ const CustomizedSlider = props => {
         max={props.max}
         step={props.step}
         value={props.value}
-        onChange={onChangeHandler}
+        onChange={props.onChange}
       />
     </div>
   );
@@ -75,7 +62,7 @@ const labelStyle = {
 
 CustomizedSlider.propTypes = {
   parameterTitle: PropTypes.string.isRequired,
-  actionType: PropTypes.string.isRequired
+  onChange: PropTypes.func.isRequired
 };
 
 export default CustomizedSlider;

@@ -19,12 +19,12 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: blue;
   text-decoration: none;
 }
 
 a:hover {
-  color: #666;
+  text-decoration: underline;
 }
 
 ul {
