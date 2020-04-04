@@ -1,9 +1,7 @@
-import { SET_PARAMETER, SET_FACE_SIZE, SET_EYE_SIZE, SET_MOUSE_SIZE, SET_CHEEK_SIZE } from '../types';
+import { SET_FACE_SIZE, SET_EYE_SIZE, SET_MOUSE_SIZE, SET_CHEEK_SIZE } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case SET_PARAMETER:
-      return state;
     case SET_FACE_SIZE:
       return {
         ...state,
