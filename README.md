@@ -1,4 +1,4 @@
-![ぴえん文字](https://imgur.com/bWlmf2N)
+![ぴえん文字](https://software.pitang1965.com/images-for-github/pien-moji.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
