@@ -1,4 +1,4 @@
-![ぴえん文字](https://i.imgur.com/U8isebZ.gif)
+![ぴえん文字](https://imgur.com/bWlmf2N)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
