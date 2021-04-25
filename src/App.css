@@ -102,14 +102,93 @@ img {
 }
 
 /* Config */
-.config{
+/* .config{
   border-radius: 50px;
   background: #8080ff;
   box-shadow: 20px 20px 60px #6d6dd9, -20px -20px 60px #9393ff;
   border: 1px black solid;
   padding: 20px 30px;
   width: 45%;
+} */
+
+.config {
+  border-radius: 50px;
+  width: 45%;
+  padding: 20px 30px;
+  box-shadow: 20px 20px 60px #6d6dd9, -20px -20px 60px #9393ff;
+  
+  animation-direction: alternate-reverse;
+  animation-name: Neumorphism;
+  animation-duration: 5s;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
+.config:hover {
+  animation-name: Neumorphism-hover;
+  animation-duration: 5s;
+  transition: .5s all;
+  transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Neumorphism {
+  0%   {
+        background: linear-gradient(45deg, #8080ff, #5b4ddb);
+        box-shadow: 30px -30px 60px #485ccf, 
+                -30px 30px 60px #9162ff;
+  }
+  25%  {
+    background: linear-gradient(45deg, #8080ff, #5b4ddb);
+    box-shadow: 30px -30px 60px #485ccf, 
+            -30px 30px 60px #9162ff
+  }
+  50%  {
+    background: linear-gradient(225deg, #8080ff, #5b4ddb);
+box-shadow: -30px 30px 60px #485ccf, 
+            30px -30px 60px #9162ff
+  }
+  75%  {    
+    background: linear-gradient(315deg, #8080ff, #5b4ddb);
+    box-shadow: -30px -30px 60px #485ccf, 
+                30px 30px 60px #9162ff
+  }
+  100% {
+     background: linear-gradient(45deg, #8080ff, #5b4ddb);
+    box-shadow: 30px -30px 60px #485ccf, 
+                -30px 30px 60px #9162ff
+  }
+}
+
+
+@keyframes Neumorphism-hover {
+  0% {
+    background: linear-gradient(45deg, #5b4ddb, #8080ff);
+    box-shadow: 30px -30px 60px #485ccf, 
+                -30px 30px 60px #9162ff
+  }
+  25% {
+    background: linear-gradient(145deg, #5b4ddb, #8080ff);
+    box-shadow: 30px 30px 60px #485ccf, 
+            -30px -30px 60px #9162ff
+  }
+  50% {
+    background: linear-gradient(225deg, #5b4ddb, #8080ff);
+    box-shadow: -30px 30px 60px #485ccf, 
+                30px -30px 60px #9162ff
+  }
+  75% {
+    background: linear-gradient(315deg, #5b4ddb, #8080ff);
+    box-shadow: -30px -30px 60px #485ccf, 
+                30px 30px 60px #9162ff
+  }
+  100% {
+    background: linear-gradient(45deg, #5b4ddb, #8080ff);
+    box-shadow: 30px -30px 60px #485ccf, 
+                -30px 30px 60px #9162ff
+  }
+}
+
 
 /* Navbar */
 .navbar {
