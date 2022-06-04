@@ -57,7 +57,7 @@ const userStyle = {
 };
 
 const labelStyle = {
-  width: '12rem'
+  width: '3rem'
 };
 
 CustomizedSlider.propTypes = {

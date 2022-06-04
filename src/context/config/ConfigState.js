@@ -10,7 +10,7 @@ import {
 
 const ConfigState = props => {
   const initialState = {
-    faceSize: 300,
+    faceSize: 96,
     eyeSize: 1.0,
     mouseSize: 1.0,
     cheekSize: 1.0

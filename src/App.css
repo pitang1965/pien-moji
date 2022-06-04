@@ -102,19 +102,10 @@ img {
 }
 
 /* Config */
-/* .config{
-  border-radius: 50px;
-  background: #8080ff;
-  box-shadow: 20px 20px 60px #6d6dd9, -20px -20px 60px #9393ff;
-  border: 1px black solid;
-  padding: 20px 30px;
-  width: 45%;
-} */
-
 .config {
   border-radius: 50px;
   width: 45%;
-  padding: 20px 30px;
+  padding: 20px 20px;
   box-shadow: 20px 20px 60px #6d6dd9, -20px -20px 60px #9393ff;
   
   animation-direction: alternate-reverse;
@@ -200,6 +191,12 @@ box-shadow: -30px 30px 60px #485ccf,
   width: 100%;
   opacity: 0.9;
 }
+
+
+.navbar h1 {
+  font-size: calc(5vw);;
+}
+
 
 .navbar ul {
   display: flex;
