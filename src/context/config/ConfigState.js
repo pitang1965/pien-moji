@@ -8,7 +8,7 @@ import {
   SET_CHEEK_SIZE
 } from '../types';
 
-const ConfigState = props => {
+const ConfigState = ({children}) => {
   const initialState = {
     faceSize: 96,
     eyeSize: 1.0,
@@ -39,7 +39,7 @@ const ConfigState = props => {
         setCheekSize
       }}
     >
-      {props.children}
+      {children}
     </ConfigContext.Provider>
   );
 };
